@@ -28,6 +28,12 @@ int main ()
             a[j-2]*=a[j-1];
             j--;
         }
+        else
+        {
+            a[j]=atoi(p);
+            j++;
+        }
+        p=strtok(NULL," ");
     }while(p != NULL );
     printf ("%d",a[0]);
 
