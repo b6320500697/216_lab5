@@ -23,7 +23,11 @@ int main ()
             a[j-2]-=a[j-1];
             j--;
         }
-
+         else if (!(strcmp(p,"*")))
+        {
+            a[j-2]*=a[j-1];
+            j--;
+        }
     }while(p != NULL );
     printf ("%d",a[0]);
 
