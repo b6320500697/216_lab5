@@ -1,5 +1,6 @@
 #include <stdio.h>
-#
+#include <stdlib.h>
+#include <string.h>
 int main ()
 {
     int n,i,j,k;
@@ -15,6 +16,11 @@ int main ()
         if(!(strcmp(p,"+")))
         {
             a[j-2]+=a[j-1];
+            j--;
+        }
+         else if (!(strcmp(p,"-")))
+        {
+            a[j-2]-=a[j-1];
             j--;
         }
 
